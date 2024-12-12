@@ -1,0 +1,85 @@
+{
+  "os": "Linux-5.4.0-144-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.12.7",
+  "startedAt": "2024-12-12T00:22:45.208183Z",
+  "program": "/home/lawrence/llava-interpret/sae_training.py",
+  "codePath": "sae_training.py",
+  "git": {
+    "remote": "https://github.com/lawrencefeng17/llava-interpret.git",
+    "commit": "279ae2bfc649df662e65c6946c18068929c64c43"
+  },
+  "email": "lawrencefeng2017@gmail.com",
+  "root": "/home/lawrence/llava-interpret",
+  "host": "iam-ironheart",
+  "username": "lawrence",
+  "executable": "/home/lawrence/anaconda3/envs/interp/bin/python",
+  "codePathLocal": "sae_training.py",
+  "cpu_count": 40,
+  "cpu_count_logical": 80,
+  "gpu": "Tesla V100-SXM2-32GB-LS",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "941591744512",
+      "used": "861104795648"
+    }
+  },
+  "memory": {
+    "total": "540928143360"
+  },
+  "cpu": {
+    "count": 40,
+    "countLogical": 80
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB-LS",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    }
+  ],
+  "cudaVersion": "12.0"
+}

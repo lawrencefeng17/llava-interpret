@@ -1,0 +1,29 @@
+Epoch 1/10:   0%|                                                                                                         | 0/14063 [12:55<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/lawrence/llava-interpret/sae_training.py", line 248, in <module>
+    model = train_sparse_autoencoder(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lawrence/llava-interpret/sae_training.py", line 145, in train_sparse_autoencoder
+    for batch_idx, activations in enumerate(progress_bar):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1402, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/lawrence/anaconda3/envs/interp/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
