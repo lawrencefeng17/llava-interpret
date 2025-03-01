@@ -82,7 +82,11 @@ def print_activation_stats(activations1: np.ndarray,
         print(f"Max:  {np.max(diff):.4f}")
 
 # Example usage:
+
+import argparse
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Visualize neural activations")
     # Generate sample data
     x1 = np.random.normal(0, 1, 16000)
     x2 = np.random.normal(0.5, 1.2, 16000)

@@ -104,13 +104,12 @@ class SparseAutoencoder(nn.Module):
     def loss(self, x):
         encoded, decoded = self(x)
         reconstruction_loss = nn.functional.mse_loss(x, decoded)
-        # Fix: Use matrix multiplication between encoded activations and decoder weights norm
         decoder_norms = torch.linalg.norm(self.decoder.weight, dim=0)
         activation_penalty = (encoded * decoder_norms).mean()
         return reconstruction_loss, activation_penalty
 
 def train_sparse_autoencoder(
-    model,
+    model,    
     optimizer,
     dataloader,
     num_epochs,
